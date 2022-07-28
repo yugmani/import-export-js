@@ -49,3 +49,19 @@ console.log(result3); //15;
 const result4 = exponentof(2, 4);
 console.log(result4); //16;
 
+// ---------------------------------------------------------
+
+// Import default Export
+// **************************
+
+import lowerString from './default.js'; //import without renaming
+import randomString from './default.js'; //import by renaming
+import { age } from './default.js'; //it is not default export
+
+const lower = lowerString('CALIFORNIA');
+console.log(lower); // california
+
+console.log(randomString('AMERICA')); // america
+
+// It is not default export
+console.log(age); //33
