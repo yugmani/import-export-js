@@ -39,3 +39,13 @@ console.log(result1); //8;
 
 const result2 = difference(9, 5);
 console.log(result2); //4;
+
+// Renaming the exported objects here from torename.js
+import { product as multiply, powerOf as exponentof } from './torename.js';
+
+const result3 = multiply(3, 5);
+console.log(result3); //15;
+
+const result4 = exponentof(2, 4);
+console.log(result4); //16;
+
